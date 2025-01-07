@@ -34,7 +34,7 @@ export const LANDING = [
 
 export const STARTING_DATE = [
     {
-        date: "January 6",
+        date: "February 10",
     },
 ];
 

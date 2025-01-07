@@ -111,7 +111,7 @@ function TimeCommitment() {
                     professionals take these techniques and successfully make a
                     case for…
                 </p>
-                <ul className="">
+                <ul className="future-list">
                     <li>
                         starting an important research project that’s been
                         back-burnered for the last 18 months.

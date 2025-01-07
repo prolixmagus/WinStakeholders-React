@@ -27,9 +27,9 @@
 }
 
 .pillarsConclusion {
-    margin-block: 2em;
+    margin-top: 3em;
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .eightPillarsList {
         margin-top: 2.5em;
         gap: 3em;

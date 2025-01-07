@@ -1,15 +1,23 @@
 #DoYouHave {
     padding-block: var(--module-padding);
+
+    .satisfaction-header {
+        margin-top: 1em;
+    }
 }
 
 #PurchasePlans {
     padding-block: var(--section-padding);
-    max-width: 800px;
+    /* max-width: 800px; */
 }
 
 .future-list {
-    margin-top: 1em;
+    margin-block: 2em;
     margin-left: 5%;
+    list-style: disc;
+    li {
+        margin-top: 0;
+    }
 }
 
 .pricingText {
@@ -26,7 +34,6 @@
         display: flex;
         flex-direction: column;
         padding-block: var(--section-padding);
-        max-width: 450px;
 
         .enrollPlanColumn {
             display: flex;
@@ -68,6 +75,9 @@
 }
 
 @media (max-width: 900px) {
+    .future-list > li {
+        margin-top: 1em;
+    }
     .btn-wrapper {
         .btn {
             width: 75%;

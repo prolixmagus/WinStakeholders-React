@@ -31,10 +31,6 @@
     --black: #000000;
 
     /* layout */
-
-    --section-padding: 2em;
-    --module-padding: 3em;
-    --big-module-padding: 4em;
 }
 .text-white {
     color: var(--white);
