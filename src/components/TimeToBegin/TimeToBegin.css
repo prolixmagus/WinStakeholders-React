@@ -11,6 +11,7 @@
 }
 
 .overcomeText {
-    padding: var(--section-padding);
+    padding-top: var(--section-padding);
     padding-inline: 0;
+    padding-bottom: 3em;
 }

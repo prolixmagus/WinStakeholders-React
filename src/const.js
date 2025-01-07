@@ -1,25 +1,25 @@
 import LandingImg from "./images/landing.png";
 
-import Person1 from "./images/individual-7.png";
-import Person2 from "./images/individual-6.png";
+import Person1 from "./images/individual-7.svg";
+import Person2 from "./images/individual-6.svg";
 import Person3 from "./images/individual-8.png";
 
-import ArticlesImage from "./images/articles.png";
-import PodcastImage from "./images/podcasts.png";
-import PresentationsImage from "./images/presentations.png";
-import BooksImage from "./images/books.png";
+import ArticlesImage from "./images/articles.svg";
+import PodcastImage from "./images/podcasts.svg";
+import PresentationsImage from "./images/presentations.svg";
+import BooksImage from "./images/books.svg";
 import TestimonialHeart from "./images/testimonial-heart.png";
 import TestimonialStar from "./images/testimonial-star.png";
 import TestimonialThumb from "./images/testimonial-thumb-up.png";
 
-import NumOne from "./images/num-1.png";
-import NumTwo from "./images/num-2.png";
-import NumThree from "./images/num-3.png";
-import NumFour from "./images/num-4.png";
-import NumFive from "./images/num-5.png";
-import NumSix from "./images/num-6.png";
-import NumSeven from "./images/num-7.png";
-import NumEight from "./images/num-8.png";
+import NumOne from "./images/num-1.svg";
+import NumTwo from "./images/num-2.svg";
+import NumThree from "./images/num-3.svg";
+import NumFour from "./images/num-4.svg";
+import NumFive from "./images/num-5.svg";
+import NumSix from "./images/num-6.svg";
+import NumSeven from "./images/num-7.svg";
+import NumEight from "./images/num-8.svg";
 
 // ////////////////////////////////////
 // // LANDING PAGE and STARTING ///////

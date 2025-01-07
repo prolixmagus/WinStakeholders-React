@@ -5,7 +5,7 @@ import { formatToLocalTime, timezoneDropdown } from "./Airtable.js";
 import { STARTING_DATE } from "../../const.js";
 import playButton1 from "./playButton1.png";
 import playButton2 from "./playButton2.png";
-import calendarImage from "./calendar_image.png";
+import calendarImage from "./calendar_image.svg";
 
 function AirtableCalendar() {
     const [expandedSections, setExpandedSections] = useState({});
@@ -39,28 +39,26 @@ function AirtableCalendar() {
 
     return (
         <div className="airtableCalendar container-cc">
-
-          <div className='scheduleTitle'>
-              <h1 className="title calm-voice">Course Schedule</h1>
-              <div className="courseSchedule-info">
-                <img src={calendarImage} />
-                <div className="courseSchedule-info-date">
-                  <h3>Cohort: {STARTING_DATE[0].date}</h3>
-                  <h3>Every session is hosted with two time options.</h3>
+            <div className="scheduleTitle">
+                <h1 className="title calm-voice">Course Schedule</h1>
+                <div className="courseSchedule-info">
+                    <img src={calendarImage} alt="small green calendar" />
+                    <div className="courseSchedule-info-date">
+                        <h3>Cohort: {STARTING_DATE[0].date}</h3>
+                        <h3>Every session is hosted with two time options.</h3>
+                    </div>
                 </div>
-              </div>
 
-              <div className="timezone-text">
-                <p>All times are currently listed in Eastern Time.</p>      
-                <p>We welcome folks from other time zones to join us.</p>      
-              </div>
+                <div className="timezone-text">
+                    <p>All times are currently listed in Eastern Time.</p>
+                    <p>We welcome folks from other time zones to join us.</p>
+                </div>
 
-              <div className='timezone-container'>
-                {timezoneDropdown(selectedTimezone, setSelectedTimezone)}
-              </div>
-          </div>
+                <div className="timezone-container">
+                    {timezoneDropdown(selectedTimezone, setSelectedTimezone)}
+                </div>
+            </div>
 
-            
             <div className="pillarSchedule-column">
                 <div className="pillarSchedule-text">Pillars 1 and 2</div>
                 {pillarData1.map((event1, index) => {
@@ -160,7 +158,9 @@ function AirtableCalendar() {
 
             <div id="pillars3and8" className="pillarSchedule-column">
                 <div className="pillarSchedule-text">Pillars 3 - 8</div>
-                <div className="pillarSchedule-subtext">(These Pillars cycle and start in different orders)</div>
+                <div className="pillarSchedule-subtext">
+                    (These Pillars cycle and start in different orders)
+                </div>
                 {pillarData2.map((event2, index) => {
                     return (
                         <div className="test123" key={index + 0.1}>
