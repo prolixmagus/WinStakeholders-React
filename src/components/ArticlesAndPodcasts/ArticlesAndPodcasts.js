@@ -22,9 +22,9 @@ function ArticlesAndPodcasts() {
             </div>
 
             <ul className="podcastList container-cc">
-                {ARTICLES_AND_PODCASTS.map((rows) => {
+                {ARTICLES_AND_PODCASTS.map((rows, index) => {
                     return (
-                        <li className="podcastItem flex">
+                        <li className="podcastItem flex" key={index}>
                             <picture className="ccIcon">
                                 <img
                                     src={rows.src}
@@ -41,7 +41,7 @@ function ArticlesAndPodcasts() {
                 })}
             </ul>
 
-            <div className="container-cc py-2 pb-4">
+            <div className="container-cc py-2">
                 <p>
                     You’ve done your best to solve your complete puzzle by
                     pulling all the pieces together. It’s hard. Especially when

@@ -37,9 +37,9 @@ function EightPillars() {
                     The 8 Pillars of Stakeholder Influence
                 </h2>
                 <ul className="eightPillarsList">
-                    {EIGHT_PILLARS.map((pillars) => {
+                    {EIGHT_PILLARS.map((pillars, index) => {
                         return (
-                            <li className="pillarItem">
+                            <li className="pillarItem" key={index}>
                                 <picture className="pillarNumber">
                                     <img
                                         src={pillars.src}

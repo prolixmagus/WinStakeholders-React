@@ -16,12 +16,12 @@ function Pricing() {
                 </h2>
 
                 <p>Think about your future.</p>
-                <ul class="future-list">
-                    {FUTURE_LIST.map((item) => {
-                        return <li>{item.text}</li>;
+                <ul className="future-list">
+                    {FUTURE_LIST.map((item, index) => {
+                        return <li key={index}>{item.text}</li>;
                     })}
                 </ul>
-                <section class="pricingText">
+                <section className="pricingText">
                     <p>Does that get you excited?</p>
                     <p>
                         Then you’re ready. You’re ready to get the right

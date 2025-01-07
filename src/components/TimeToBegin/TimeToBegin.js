@@ -3,8 +3,8 @@ import "./TimeToBegin.css";
 function TimeToBegin() {
     return (
         <div id="TimeToBegin" className="flex flex-direction-column">
-            <div className="timeToBeginAnnouncement container-cc text-center border-sandwich">
-                <h2 className="ctaMessage attention-voice">
+            <div className="timeToBeginAnnouncement container-cc border-sandwich">
+                <h2 className="attention-voice">
                     With all your experience and dedication, don’t you think
                     it’s time you start WINNING?
                 </h2>

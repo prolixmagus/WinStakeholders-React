@@ -4,7 +4,7 @@ import { TESTIMONIAL_VIDEO } from "../../const.js";
 function RecordingTestimonial() {
     return (
         <div id="RecordingTestimonial" className="bg-black">
-            <div className="pb-3">
+            <div>
                 <h1 className="loud-voice text-white text-center font-mogan">
                     On the fence?
                 </h1>

@@ -8,7 +8,7 @@
 
 #PurchasePlans {
     padding-block: var(--section-padding);
-    max-width: 800px;
+    /* max-width: 800px; */
 }
 
 .future-list {
@@ -34,7 +34,6 @@
         display: flex;
         flex-direction: column;
         padding-block: var(--section-padding);
-        max-width: 450px;
 
         .enrollPlanColumn {
             display: flex;

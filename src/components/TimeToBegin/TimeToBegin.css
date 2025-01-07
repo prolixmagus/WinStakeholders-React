@@ -1,5 +1,9 @@
 .timeToBeginAnnouncement {
     padding-block: 2em;
+    margin-block: var(--section-padding);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
     p {
         max-width: 100%;

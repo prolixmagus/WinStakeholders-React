@@ -3,6 +3,14 @@
     src: url(./font/Mogan-Regular.otf);
 }
 
+:root {
+    --par-spacing: 1rem;
+    --h2-p-spacing: calc(var(--par-spacing) * 1.5);
+    --section-padding: 2rem;
+    --module-padding: calc(var(--section-padding) * 1.5);
+    --big-module-padding: calc(var(--section-padding) * 2);
+}
+
 * {
     font-family: "Montserrat", sans-serif;
 }
@@ -13,7 +21,7 @@
 
 p {
     color: var(--ink);
-    max-width: 70ch;
+    max-width: 80ch;
 }
 
 .caption-voice {
@@ -25,7 +33,7 @@ li,
 .calm-voice {
     font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica,
         Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1.125rem /* 18 px */;
     line-height: 1.5;
 }
 
@@ -45,7 +53,7 @@ li,
 }
 
 .loud-voice {
-    font-size: clamp(32px, 5vw, 40px);
+    font-size: clamp(32px, 3vw, 40px);
 }
 
 /* Headings - should change to voices */
@@ -93,17 +101,17 @@ h4 {
 }
 
 p + p {
-    padding-top: 1em;
+    padding-top: var(--par-spacing);
 }
 h1 + p,
 h2 + p,
 h3 + p,
 p + h2 {
-    margin-top: 1.5em;
+    margin-top: var(--h2-p-spacing);
 }
 
 li + li {
-    margin-top: 1em;
+    margin-top: var(--par-spacing);
 }
 
 span {
@@ -127,5 +135,12 @@ em {
 @media (max-width: 600px) {
     h2.loud-voice {
         font-size: 2em;
+    }
+}
+
+@media (min-width: 1400px) {
+    :root {
+        --par-spacing: 1.5rem;
+        --section-padding: 4rem;
     }
 }
