@@ -5,16 +5,24 @@
 
 .introColumnContent {
     width: 60%;
+
+    h2 {
+        margin-top: 1.6em;
+    }
 }
 
 .introColumnImage {
     width: 40%;
     display: flex;
     justify-content: center;
+
+    picture {
+        max-width: 400px;
+    }
 }
 
 #IntroStatement picture {
-    max-width: 200px;
+    max-width: 300px;
 }
 
 @media (max-width: 650px) {

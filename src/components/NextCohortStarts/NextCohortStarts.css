@@ -1,19 +1,19 @@
 .startingDateWrapper {
-    position: relative;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .startingDate {
     background-color: black;
     font-size: 1.5rem;
     padding-top: 2em;
-    margin-right: 5%;
     font-weight: 400;
+    transform: translate(-6%, 0);
 }
 
 @media screen and (max-width: 650px) {
     .startingDate {
         font-size: 1.125rem;
-        margin-left: 0;
     }
 
     #EnrollNow {
@@ -22,5 +22,11 @@
                 font-size: 1.125rem;
             }
         }
+    }
+}
+
+@media (min-width: 1000px) {
+    .startingDate {
+        transform: translate(-10%, 0);
     }
 }
