@@ -45,22 +45,22 @@ export const STARTING_DATE = [
 export const INTRO_STATEMENT = [
     {
         id: 0,
-        span: "What if you could influence meaningful improvements in your organization’s products and services?",
-        desc: "And be excited when you deliver great projects?!?",
+        span: "Because of the program…",
+        desc: "I got unlimited access to users for deep UX research when, before, nobody would let them near any users or customers.",
         src: Person1,
         alt: "Searching in book (with magnifying glass)",
     },
     {
         id: 1,
-        span: "What if you could create a strong culture of delivering great user experiences?",
-        desc: "And put the constant battles to make users a priority behind you?!",
+        span: "Halfway through the program…",
+        desc: "I was called to run executive-level visioning workshops, and the executives were excited to adopt a UX perspective on the organization's strategy.",
         src: Person2,
         alt: "Chess piece with road map",
     },
     {
         id: 2,
-        span: "What if you could drive important decisions directly from critical user research insights?",
-        desc: "And know the problems you’re solving are the right ones to solve?!",
+        span: "After graduating from the program…",
+        desc: "I'm now regularly collaborating with Product Managers who never used to give me the time of day, let alone give UX any consideration.",
         src: Person3,
         alt: "Man pushing knight chess piece.",
     },
@@ -169,13 +169,15 @@ export const PAYMENT_PLAN = [
         // SOLO UX LEADER PRICE
         monthlyPrice: "$899",
         oneTimePrice: "$2,697",
-        enrollLink: "https://reg.centercentre.com/winstakeholders-individual/",
+        enrollLink:
+            "https://centercentre.spiffy.co/checkout/winstakeholders-individual-special",
     },
     {
         // Team of 2 or More PRICE
         monthlyPrice: "$799",
         oneTimePrice: "$2,397",
-        enrollLink: "https://reg.centercentre.com/winstakeholders-team",
+        enrollLink:
+            "https://centercentre.spiffy.co/checkout/winstakeholders-team-prepaid-special",
     },
 ];
 
