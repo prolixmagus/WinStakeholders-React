@@ -3,39 +3,37 @@ import WinSoloSignUp2x from "../../images/Win-Solo-Signup2x.png";
 import WinTeamSignUp2x from "../../images/Win-Team-Signup2x.png";
 import { PAYMENT_PLAN } from "../../const.js";
 import { FUTURE_LIST } from "../../const.js";
-
 function Pricing() {
     return (
         <div id="DoYouHave" className="container-cc">
             <div>
-                <h1 className="loud-voice font-mogan">
+                <h1 className="font-mogan">
                     Do you have your sights on changing UX in your organization?
                 </h1>
                 <h2 className="change-cta-voice">
                     The change begins with you.
                 </h2>
-
                 <p>Think about your future.</p>
-                <ul className="future-list">
-                    {FUTURE_LIST.map((item, index) => {
-                        return <li key={index}>{item.text}</li>;
+                <ul class="future-list">
+                    {FUTURE_LIST.map((item) => {
+                        return <li>{item.text}</li>;
                     })}
                 </ul>
-                <section className="pricingText">
+                <section class="pricingText">
                     <p>Does that get you excited?</p>
                     <p>
-                        Then you’re ready. You’re ready to get the right
+                        Then you're ready. You're ready to get the right
                         skillset, the right toolset, and the right mindset to
-                        positively impact this world. You’ll have the power to
-                        make a difference. You’ll love the work you do every
-                        day. You’ll be energized and excited about the problems
-                        you’re solving.
+                        positively impact this world. You'll have the power to
+                        make a difference. You'll love the work you do every
+                        day. You'll be energized and excited about the problems
+                        you're solving.
                     </p>
                     <p>
                         And we'll be there, right beside you. They will support
                         you all the way. With the knowledge and expertise
-                        they’ve acquired over decades, they know what works for
-                        the most successful UX leaders. With their help, you’ll
+                        they've acquired over decades, they know what works for
+                        the most successful UX leaders. With their help, you'll
                         join that select group of outstanding professionals.
                     </p>
                     <p>
@@ -48,35 +46,34 @@ function Pricing() {
                         enrolling in the program? Use the Team button.
                     </p>
                     <p>
-                        That’s it. That’s all you have to do to get 16 weeks of
-                        support. That’s all you have to do to get on the path to
+                        That's it. That's all you have to do to get 16 weeks of
+                        support. That's all you have to do to get on the path to
                         changing the trajectory of your UX career.
                     </p>
-                    <h2 className="change-CTA-voice satisfaction-header">
+                    <h2 id="we-guarantee-your-satisfaction-100-">
                         We guarantee your satisfaction 100%
                     </h2>
                     <p>As in, your money back. Seriously.</p>
                     <p>
-                        These techniques work. We’ve seen them work with UX
+                        These techniques work. We've seen them work with UX
                         leaders all around the world.
                     </p>
                     <p>
                         We want you to succeed. We want you to feel 100%
-                        confident that you’ll know how to align your UX
+                        confident that you'll know how to align your UX
                         capabilities with key business objectives. Even your
                         toughest stakeholders — the ones constantly blocking UX
                         progress — will find it difficult to argue with solid
                         ideas that support their own priorities.
                     </p>
                     <p>
-                        That’s why we offer this guarantee. There’s no risk
-                        here. Sign up, and you’ll see why we’re so confident
+                        That's why we offer this guarantee. There's no risk
+                        here. Sign up, and you'll see why we're so confident
                         about the 8 Pillars.
                     </p>
                 </section>
-
                 <div id="PurchasePlans">
-                    <h1 className="loud-voice font-mogan mogine-mobile-30">
+                    <h1 className="font-mogan mogine-mobile-30">
                         Your next step to winning stakeholders & influencing
                         decisions…
                     </h1>
@@ -93,35 +90,37 @@ function Pricing() {
                                 <div className="enrollPlanContent">
                                     <h2>Enroll as a Solo UX Leader</h2>
                                     <p>
-                                        If you’re a UX leader or someone ready
+                                        If you're a UX leader or someone ready
                                         to jump into UX leadership, this program
-                                        is for you. You’ll get the full
+                                        is for you. You'll get the full
                                         mentorship and coaching you need to grow
                                         your responsibility and influence in
                                         your organization.
                                     </p>
-
                                     <p>
+                                        Invest in your career. Your investment
+                                        in lifetime skills will forever change
+                                        the trajectory of your UX career.{" "}
+                                    </p>
+                                    <p>
+                                        <strong>Limited Time Offer</strong>
+                                    </p>
+                                    <p>
+                                        For a limited time, we're keeping the
+                                        special extra discounted price of{" "}
+                                        <s>$2,697</s>{" "}
+                                        <strong>
+                                            {PAYMENT_PLAN[0].oneTimePrice}
+                                        </strong>
+                                    </p>
+                                    {/* <p>
                                         You can pay{" "}
                                         <strong>
                                             {PAYMENT_PLAN[0].monthlyPrice}/month
                                         </strong>{" "}
                                         for 4 months.
-                                    </p>
-                                    <p>
-                                        Or you can{" "}
-                                        <strong>
-                                            save {PAYMENT_PLAN[0].monthlyPrice}
-                                        </strong>{" "}
-                                        with{" "}
-                                        <strong>
-                                            a one-time payment of{" "}
-                                            {PAYMENT_PLAN[0].oneTimePrice}
-                                        </strong>
-                                        .
-                                    </p>
+                                    </p> */}
                                 </div>
-
                                 <div className="btn-wrapper">
                                     <a
                                         className="btn btn-custom btn-fill btn-shadow"
@@ -132,7 +131,6 @@ function Pricing() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="enrollPlan">
                             <picture>
                                 <img
@@ -147,7 +145,6 @@ function Pricing() {
                                         Enroll as a Team of 2 or More (save per
                                         person)
                                     </h2>
-
                                     <p>
                                         When members of your UX team learn these
                                         skills and techniques together, the
@@ -166,26 +163,24 @@ function Pricing() {
                                         price.
                                     </p>
                                     <p>
+                                        <strong>Limited Time Offer</strong>
+                                    </p>
+                                    <p>
+                                        For a limited time, we're keeping the
+                                        special extra discounted price of{" "}
+                                        <s>$2,397</s>{" "}
+                                        <strong>
+                                            {PAYMENT_PLAN[1].oneTimePrice}
+                                        </strong>
+                                    </p>
+                                    {/* <p>
                                         Each of you can enroll for{" "}
                                         <strong>
                                             {PAYMENT_PLAN[1].monthlyPrice}/month
                                         </strong>{" "}
                                         for 4 months.
-                                    </p>
-                                    <p>
-                                        Or you can{" "}
-                                        <strong>
-                                            save {PAYMENT_PLAN[1].monthlyPrice}
-                                        </strong>{" "}
-                                        when you pay{" "}
-                                        <strong>
-                                            a one-time payment of{" "}
-                                            {PAYMENT_PLAN[1].oneTimePrice}
-                                        </strong>
-                                        .
-                                    </p>
+                                    </p> */}
                                 </div>
-
                                 <div className="btn-wrapper">
                                     <a
                                         className="btn btn-customPink btn-fill btn-shadow"
@@ -202,5 +197,4 @@ function Pricing() {
         </div>
     );
 }
-
 export default Pricing;
