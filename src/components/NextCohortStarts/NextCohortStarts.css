@@ -11,6 +11,15 @@
     transform: translate(-6%, 0);
 }
 
+#EnrollNow {
+    .startingDateWrapper {
+        .startingDate {
+            font-size: 1.125rem;
+            transform: translate(0, 0);
+        }
+    }
+}
+
 @media screen and (max-width: 650px) {
     .startingDate {
         font-size: 1.125rem;
@@ -20,6 +29,7 @@
         .startingDateWrapper {
             .startingDate {
                 font-size: 1.125rem;
+                transform: translate(0, 0);
             }
         }
     }
