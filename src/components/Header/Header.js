@@ -3,7 +3,7 @@ import LogoBlack from "../../images/CC-UIE-black-logo.png";
 
 function Navbar() {
     return (
-        <div id="Header" className="bg-lightGray">
+        <div id="Header">
             <div className="topbar container-cc">
                 <picture className="header-logo">
                     <img

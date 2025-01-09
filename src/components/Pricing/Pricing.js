@@ -103,12 +103,15 @@ function Pricing() {
                                         the trajectory of your UX career.{" "}
                                     </p>
                                     <p>
+                                        <h2>    
                                         <strong>Limited Time Offer</strong>
+                                        </h2>
                                     </p>
-                                    <p>
+                                    <p style={{padding: '0px'}}>
                                         For a limited time, we're keeping the
                                         special extra discounted price of{" "}
                                         <s>{PAYMENT_PLAN[0].previousPrice}</s>{" "}
+
                                         <strong>
                                             {PAYMENT_PLAN[0].oneTimePrice}
                                         </strong>.
@@ -156,9 +159,11 @@ function Pricing() {
                                         price.
                                     </p>
                                     <p>
+                                        <h2>    
                                         <strong>Limited Time Offer</strong>
+                                        </h2>
                                     </p>
-                                    <p>
+                                    <p style={{padding: '0px'}}>
                                         For a limited time, we're keeping the
                                         special extra discounted price of{" "}
                                         <s>{PAYMENT_PLAN[1].previousPrice}</s>{" "}
