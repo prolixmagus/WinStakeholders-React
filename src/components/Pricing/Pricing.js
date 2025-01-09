@@ -108,18 +108,11 @@ function Pricing() {
                                     <p>
                                         For a limited time, we're keeping the
                                         special extra discounted price of{" "}
-                                        <s>$2,697</s>{" "}
+                                        <s>{PAYMENT_PLAN[0].previousPrice}</s>{" "}
                                         <strong>
                                             {PAYMENT_PLAN[0].oneTimePrice}
-                                        </strong>
+                                        </strong>.
                                     </p>
-                                    {/* <p>
-                                        You can pay{" "}
-                                        <strong>
-                                            {PAYMENT_PLAN[0].monthlyPrice}/month
-                                        </strong>{" "}
-                                        for 4 months.
-                                    </p> */}
                                 </div>
                                 <div className="btn-wrapper">
                                     <a
@@ -168,10 +161,10 @@ function Pricing() {
                                     <p>
                                         For a limited time, we're keeping the
                                         special extra discounted price of{" "}
-                                        <s>$2,397</s>{" "}
+                                        <s>{PAYMENT_PLAN[1].previousPrice}</s>{" "}
                                         <strong>
                                             {PAYMENT_PLAN[1].oneTimePrice}
-                                        </strong>
+                                        </strong>.
                                     </p>
                                     {/* <p>
                                         Each of you can enroll for{" "}

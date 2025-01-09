@@ -16,7 +16,6 @@ import RecordingTestimonial from "./components/RecordingTestimonial/RecordingTes
 import Footer from "./components/Footer/Footer.js";
 
 import AirtableCalendar from "./components/Calendar/AirtableCalendar.js";
-// import HardcoreCalendar from './components/Calendar/hardcoreCalendar.js'
 
 function App() {
     return (
