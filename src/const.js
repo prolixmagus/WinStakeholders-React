@@ -170,14 +170,14 @@ export const PAYMENT_PLAN = [
         previousPrice: "$2,697",
         oneTimePrice: "1,697",
         enrollLink:
-            "https://centercentre.spiffy.co/checkout/winstakeholders-individual-special",
+            "https://reg.centercentre.com/win-solo-individual-checkout-special/",
     },
     {
         // Team of 2 or More PRICE
         previousPrice: "$2,697",
         oneTimePrice: "$1,497",
         enrollLink:
-            "https://centercentre.spiffy.co/checkout/winstakeholders-team-prepaid-special",
+            "https://reg.centercentre.com/2025-win-team-checkout-special/",
     },
 ];
 
