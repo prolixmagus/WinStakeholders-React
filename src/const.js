@@ -174,7 +174,7 @@ export const PAYMENT_PLAN = [
     },
     {
         // Team of 2 or More PRICE
-        previousPrice: "$2,697",
+        previousPrice: "$2,397",
         oneTimePrice: "$1,497",
         enrollLink:
             "https://reg.centercentre.com/2025-win-team-checkout-special/",
