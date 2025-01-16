@@ -47,7 +47,7 @@ function AboutUs() {
                         You’ll love Jared’s always-relevant stories and his ability to demonstrate every point with a simple, concrete example. He’s done this work for a long time and will share every corner of his knowledge and experience with you.
                     </p>
                     <p>
-                    Most importantly, you’ll love how much more confident you’ll feel each week as you take in and start to use what you learn. Leslie and Jared have poured their experience-informed wisdom into this program. They’ve listened to what you’ve been struggling with. So don’t pass up this opportunity to learn everything you can.
+                        Most importantly, you’ll love how much more confident you’ll feel each week as you take in and start to use what you learn. Leslie and Jared have poured their experience-informed wisdom into this program. They’ve listened to what you’ve been struggling with. So don’t pass up this opportunity to learn everything you can.
                     </p>
                 </div>
                 <div className="founderImage">

@@ -5,6 +5,8 @@ function Navbar() {
     return (
         <div id="Header">
             <div className="topbar container-cc">
+                <a href='./'>
+                
                 <picture className="header-logo">
                     <img
                         className="img-resp"
@@ -12,6 +14,7 @@ function Navbar() {
                         src={LogoBlack}
                     />
                 </picture>
+                </a>
 
                 <div className="enroll-btn-container">
                     <a
