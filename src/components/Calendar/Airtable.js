@@ -109,7 +109,9 @@ export const timezones = [
   "Asia/Shanghai", // CST
   "Asia/Taipei", // HKT
   "Asia/Seoul", // KST
+  "Asia/Jakarta", // Indonesia ST
   "Asia/Kolkata", // IST
+  "Asia/Yerevan", // Armenia ST
   "Asia/Dubai", // GST
   "Australia/Melbourne", // AEDT
   "Pacific/Auckland", // NZDT

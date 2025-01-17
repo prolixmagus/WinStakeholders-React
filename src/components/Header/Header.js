@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <div id="Header">
             <div className="topbar container-cc">
-                <a href='./'>
+                <a href='https://www.centercentre.com'>
                 
                 <picture className="header-logo">
                     <img
