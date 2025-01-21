@@ -93,44 +93,87 @@ export const formatToLocalTime = (dateString, includeTimezone = true, timezone =
 
 
 export const timezones = [
-  "UTC",
-  "America/New_York", // EST
-  "America/Los_Angeles", // PST
-  "America/Chicago", // CST
-  "America/Denver", // MST
-  "America/Anchorage", // AKST
-  "Europe/London", // GMT
-  "Europe/Paris", // CET
-  "Europe/Moscow", // MSK
-  "Europe/Istanbul", // TRT
-  "Africa/Cairo", // EET
-  "Africa/Johannesburg", // SAST
-  "Asia/Tokyo", // JST
-  "Asia/Shanghai", // CST
-  "Asia/Taipei", // HKT
-  "Asia/Seoul", // KST
-  "Asia/Jakarta", // Indonesia ST
-  "Asia/Kolkata", // IST
-  "Asia/Yerevan", // Armenia ST
-  "Asia/Dubai", // GST
-  "Australia/Melbourne", // AEDT
-  "Pacific/Auckland", // NZDT
-  "Pacific/Fiji", // FJT
-  "Pacific/Honolulu" // HST
+  "UTC", // GMT+0
+  "Atlantic/Azores", // GMT-1
+  "Atlantic/South_Georgia", // GMT-2
+  "America/Buenos_Aires", // GMT-3
+  "America/St_Johns", // GMT-3:30
+  "America/Caracas", // GMT-4
+  "America/New_York", // GMT-5
+  "America/Chicago", // GMT-6
+  "America/Denver", // GMT-7
+  "America/Los_Angeles", // GMT-8
+  "America/Anchorage", // GMT-9
+  "Pacific/Honolulu", // GMT-10
+  "Pacific/Midway", // GMT-11
+  "Pacific/Kiritimati", // GMT+14
+  "Pacific/Apia", // GMT+13
+  "Pacific/Chatham", // GMT+12:45
+  "Pacific/Auckland", // GMT+12
+  "Pacific/Fiji", // GMT+12
+  "Pacific/Noumea", // GMT+11
+  "Australia/Sydney", // GMT+10
+  "Australia/Darwin", // GMT+9:30
+  "Asia/Tokyo", // GMT+9
+  "Asia/Seoul", // GMT+9
+  "Asia/Shanghai", // GMT+8
+  "Asia/Taipei", // GMT+8
+  "Asia/Bangkok", // GMT+7
+  "Asia/Yangon", // GMT+6:30
+  "Asia/Dhaka", // GMT+6
+  "Asia/Kathmandu", // GMT+5:45
+  "Asia/Karachi", // GMT+5
+  "Asia/Kolkata", // GMT+5:30
+  "Asia/Kabul", // GMT+4:30
+  "Asia/Dubai", // GMT+4
+  "Asia/Yerevan", // GMT+4
+  "Asia/Tehran", // GMT+3:30
+  "Africa/Nairobi", // GMT+3
+  "Europe/Moscow", // GMT+3
+  "Europe/Istanbul", // GMT+3
+  "Africa/Johannesburg", // GMT+2
+  "Africa/Cairo", // GMT+2
+  "Europe/Athens", // GMT+2
+  "Europe/Berlin", // GMT+1
+  "Europe/Paris", // GMT+1
+  "Europe/London", // GMT+0
 ];
 
 
+
+const getTimezoneOffset = (timezone) => {
+  const now = new Date();
+  const tzOffset = new Intl.DateTimeFormat('en-US', {
+      timeZone: timezone,
+      timeZoneName: 'short',
+  }).formatToParts(now);
+
+  const offsetPart = tzOffset.find((part) => part.type === 'timeZoneName');
+  return offsetPart ? offsetPart.value : '';
+};
+
+// Updated dropdown component
 export const timezoneDropdown = (selectedTimezone, setSelectedTimezone) => {
   return (
-    <select 
-      value={selectedTimezone} 
-      onChange={(e) => setSelectedTimezone(e.target.value)}
-    >
-      {timezones.map((tz) => (
-        <option key={tz} value={tz}>
-          {tz}
-        </option>
-      ))}
-    </select>
+      <select
+          value={selectedTimezone}
+          onChange={(e) => setSelectedTimezone(e.target.value)}
+      >
+          {timezones.map((tz) => {
+              const offset = getTimezoneOffset(tz);
+              return (
+                  <option key={tz} value={tz}>
+                      {`${tz} (${offset})`}
+                  </option>
+              );
+          })}
+      </select>
   );
 };
+
+/// FORMAT TO LOCAL TIMEZONE ///
+/// FORMAT TO LOCAL TIMEZONE ///
+/// FORMAT TO LOCAL TIMEZONE ///
+
+
+
