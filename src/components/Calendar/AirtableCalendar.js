@@ -143,7 +143,7 @@ function AirtableCalendar() {
                                         <div className="optionTime">
                                             {event1.evenDateOutput} at{" "}
                                             {formatToLocalTime(
-                                                event1.evenDate1,
+                                                event1.evenDate2,
                                                 true,
                                                 selectedTimezone
                                             )}
