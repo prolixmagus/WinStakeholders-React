@@ -1,16 +1,15 @@
 import "./AirtableCalendar.css";
 import React, { useState, useEffect } from "react";
-import { fetchData_P1P2, fetchData_P3P8 } from "./Airtable.js";
+import { fetchData_P1P2, fetchData_P3P8, fetchData_startDate } from "./Airtable.js";
 import { formatToLocalTime, timezoneDropdown } from "./Airtable.js";
-import { STARTING_DATE } from "../../const.js";
+// import { STARTING_DATE } from "../../const.js";
 import playButton1 from "./playButton1.png";
 import playButton2 from "./playButton2.png";
 import calendarImage from "./calendar_image.svg";
 
 function AirtableCalendar() {
     const [expandedSections, setExpandedSections] = useState({});
-    const [selectedTimezone, setSelectedTimezone] =
-        useState("America/New_York"); // Default to EST
+    const [selectedTimezone, setSelectedTimezone] = useState("America/New_York"); // Default to EST
 
     const toggleDetails = (index) => {
         setExpandedSections((prevState) => ({
@@ -20,11 +19,13 @@ function AirtableCalendar() {
     };
     const [pillarData1, setEvents1] = useState([]);
     const [pillarData2, setEvents2] = useState([]);
+    const [startDate, setEvents3] = useState([]);
 
     useEffect(() => {
         const loadEvents = async () => {
             const fetchedData1 = await fetchData_P1P2();
             const fetchedData2 = await fetchData_P3P8();
+            const fetchedStartDate = await fetchData_startDate();
 
             // Sort pillarData1 and pillarData2 by an appropriate property
             const sortedData1 = fetchedData1.sort((a, b) => a.id - b.id); // Replace 'id' with the key that determines order
@@ -32,10 +33,15 @@ function AirtableCalendar() {
 
             setEvents1(sortedData1);
             setEvents2(sortedData2);
+            setEvents3(fetchedStartDate);
         };
 
         loadEvents();
     }, []);
+
+    useEffect(() => {
+        console.log("Updated startDate:", startDate);
+    }, [startDate]);
 
     return (
         <div className="airtableCalendar container-cc">
@@ -44,7 +50,7 @@ function AirtableCalendar() {
                 <div className="courseSchedule-info">
                     <img src={calendarImage} alt="small green calendar" />
                     <div className="courseSchedule-info-date">
-                        <h3>Cohort: {STARTING_DATE[0].date}</h3>
+                        <h3>Cohort: {startDate[0].date || "loading..."}</h3>
                         <h3>Every session is hosted with two time options.</h3>
                     </div>
                 </div>
