@@ -113,21 +113,20 @@ function TimeCommitment() {
                 </p>
                 <ul className="future-list">
                     <li>
-                        starting an important research project that’s been
+                        Starting an important research project that’s been
                         back-burnered for the last 18 months.
                     </li>
                     <li>
-                        growing their UX team to better keep pace with product
+                        Growing their UX team to better keep pace with product
                         and development.
                     </li>
                     <li>
-                        expanding their organization’s research capability to
+                        Expanding their organization’s research capability to
                         influence strategic decisions.
                     </li>
                     <li>
-                        shifting their organization to stop <em>saying</em>{" "}
-                        they’re customer-centered, and instead
-                        <em>truly become</em> customer-centered.
+                        Shifting their organization to stop <i>saying</i>{" "}
+                        they’re customer-centered, and instead <i>truly become</i> customer-centered.
                     </li>
                 </ul>
             </section>

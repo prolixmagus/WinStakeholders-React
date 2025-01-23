@@ -2,7 +2,6 @@ import "./AirtableCalendar.css";
 import React, { useState, useEffect } from "react";
 import { fetchData_P1P2, fetchData_P3P8, fetchData_startDate } from "./Airtable.js";
 import { formatToLocalTime, timezoneDropdown } from "./Airtable.js";
-// import { STARTING_DATE } from "../../const.js";
 import playButton1 from "./playButton1.png";
 import playButton2 from "./playButton2.png";
 import calendarImage from "./calendar_image.svg";
@@ -39,10 +38,6 @@ function AirtableCalendar() {
         loadEvents();
     }, []);
 
-    useEffect(() => {
-        console.log("Updated startDate:", startDate);
-    }, [startDate]);
-
     return (
         <div className="airtableCalendar container-cc">
             <div className="scheduleTitle">
@@ -50,7 +45,7 @@ function AirtableCalendar() {
                 <div className="courseSchedule-info">
                     <img src={calendarImage} alt="small green calendar" />
                     <div className="courseSchedule-info-date">
-                        <h3>Cohort: {startDate[0].date || "loading..."}</h3>
+                        <h3>Cohort: {startDate[0]?.startDate || " "}</h3>
                         <h3>Every session is hosted with two time options.</h3>
                     </div>
                 </div>

@@ -5,13 +5,14 @@ function TimeToBegin() {
         <div id="TimeToBegin" className="flex flex-direction-column">
             <div className="timeToBeginAnnouncement container-cc border-sandwich">
                 <h2 className="attention-voice">
-                    With all your experience and dedication, don’t you think
-                    it’s time you start WINNING?
+                It's time to begin your real career!
+                <br />
+                <br />
+                Our job as UX Leaders isn't to deliver design.
+                <br />
+                <br />
+                Our job is to influence decisions.
                 </h2>
-                <p>
-                    It’s time you win your stakeholders’ trust and start
-                    influencing important product decisions.
-                </p>
             </div>
 
             <div className="overcomeText container-cc">

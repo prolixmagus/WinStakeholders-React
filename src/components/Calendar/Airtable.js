@@ -14,7 +14,7 @@ export const fetchData_startDate = async () => {
     const response = await axios.get(url, { headers });
     return response.data.records.map(record => ({
       id: record.fields.id,
-      date: record.fields.CohortStart,
+      startDate: record.fields.CohortStart,
 
     }));
   } catch (error) {
